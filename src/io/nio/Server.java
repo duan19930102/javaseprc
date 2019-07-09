@@ -59,6 +59,6 @@ public class Server {
         ServerSocketChannel serverSocketChannel = (ServerSocketChannel) selectionKey.channel();
         SocketChannel socketChannel = serverSocketChannel.accept();
         socketChannel.configureBlocking(false);
-        socketChannel.register(selectionKey.selector(),selectionKey.OP_READ, ByteBuffer.allocate())
+        //socketChannel.register(selectionKey.selector(),selectionKey.OP_READ, ByteBuffer.allocate());
     }
 }
